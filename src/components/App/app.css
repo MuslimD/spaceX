@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+}
+.app {
+  height: 34vw;
+  background-image: url("../../assets/mars.png");
+  background-size: 100%;
+}
+.start_journey {
+  height: 2.5vw;
+  font-size: 1vw;
+  border-radius: 2px;
+  margin-left: 22vw;
+  margin-top: 13.5vw;
+  border: 1px solid rgba(38, 59, 177, 0.269);
+  color: rgba(255, 255, 255, 0.552);
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.start_journey:hover {
+  transition: 400ms;
+  transform: scale(1.2);
+}
+.main {
+  display: flex;
+}
+.info {
+  width: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30vw;
+  margin-top: 2vw;
+}
+.top_left,
+.top_right,
+.botton_left,
+.botton_right {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1vw;
+  padding: 1vw;
+  margin: 0.5vw;
+  width: 7vw;
+  color: rgba(255, 255, 255, 0.542);
+}
+.top_left:hover,
+.top_right:hover,
+.botton_left:hover,
+.botton_right:hover {
+  transition: 300ms;
+  transform: scale(1.1);
+}
+b {
+  line-height: 3.5vw;
+  color: white;
+  font-size: 2.5vw;
+}
+
+.top_left {
+  background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
+}
+.top_right {
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
+}
+.botton_left {
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
+}
+.botton_right {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+@media only screen and (max-width: 390px) {
+  .app {
+    height: 130vw;
+    background-image: url("../../assets/marsphone.png");
+    background-size: 100%;
+  }
+
+  .main {
+    display: block;
+  }
+  .start_journey {
+    margin-top: 50vw;
+    margin-left: 15vw;
+    height: 4vw;
+    font-size: 2vw;
+  }
+  .info {
+    margin-top: 30vw;
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  b {
+    font-size: 7vw;
+    line-height: 8vw;
+  }
+  .top_left,
+  .top_right,
+  .botton_left,
+  .botton_right {
+    line-height: 3.5vw;
+    font-size: 3vw;
+    width: 35vw;
+  }
+}
