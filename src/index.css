@@ -1,9 +1,50 @@
+.headers {
+  width: 99vw;
+  height: 5vw;
+  font-size: 1vw;
+  display: flex;
+  border: 2px solid rgba(255, 255, 255, 0.083);
+  background-color: rgba(0, 0, 0, 0.377);
+}
+.spacex {
+  cursor: pointer;
+  margin-left: 20vw;
+  height: 5vw;
+  width: 16vw;
+}
+.a {
+  width: 45vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10vw;
+}
+a {
+  color: rgba(254, 254, 254, 0.393);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline 1px;
+  text-underline-offset: 8px;
+}
+.is_show_links {
+  display: none;
+  font-size: 5vw;
+  height: 15vw;
+  width: 15vw;
+  border-radius: 3px;
+  position: absolute;
+  left: 85vw;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.013);
+}
 body {
   margin: 0;
+  background-color: black;
 }
 .app {
   height: 34vw;
-  background-image: url("../../assets/mars.png");
+  background-image: url("./assets/mars.png");
   background-size: 100%;
 }
 .start_journey {
@@ -86,18 +127,41 @@ b {
 }
 
 @media only screen and (max-width: 576px) {
+  .a {
+    display: none;
+  }
+  .spacex {
+    margin-left: 0;
+    height: 15vw;
+    width: 40vw;
+  }
+  .headers {
+    height: 15vw;
+    font-size: 1vw;
+  }
+  .is_show_links {
+    display: block;
+  }
+  .a_show {
+    display: flex;
+    width: 85vw;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  a {
+    font-size: 2vw;
+  }
   .app {
-    height: 130vw;
-    background-image: url("../../assets/marsphone.png");
+    height: 140vw;
+    background-image: url("./assets/marsphone.png");
     background-size: 100%;
   }
-
   .main {
     display: block;
   }
   .start_journey {
-    margin-top: 50vw;
-    margin-left: 15vw;
+    margin-top: 38vw;
+    margin-left: 10vw;
     height: 4vw;
     font-size: 2vw;
   }

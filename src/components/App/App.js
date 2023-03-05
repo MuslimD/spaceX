@@ -1,15 +1,12 @@
 import React, { useState } from "react";
-import "./app.css";
 import Headers from "../Headers/Headers";
 
 const App = () => {
   return (
     <div className="app">
       <Headers />
-
       <div className="main ">
         <button className="start_journey">Начать путешествие</button>
-
         <div className="info">
           <div className="top_left">
             мы
