@@ -28,7 +28,7 @@ a:hover {
   text-underline-offset: 8px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   .a {
     display: none;
   }

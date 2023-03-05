@@ -85,7 +85,7 @@ b {
   );
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   .app {
     height: 130vw;
     background-image: url("../../assets/marsphone.png");
